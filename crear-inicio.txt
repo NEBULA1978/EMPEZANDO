@@ -7,3 +7,1452 @@ cd empezando
 npm install
 npm run dev
 
+next@next-System:~/empezando$ npm run dev
+
+> empezando@0.0.0 dev
+> vite
+
+
+  VITE v4.1.4  ready in 337 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h to show help
+next@next-System:~/empezando$
+
+Carpetas principales:
+
+componentes:
+
+main.js:
+Inicialmente va a importar:
+import App from './App.vue'
+Eliminamos importar css:
+// import './assets/main.css'
+Inicialmente ejecutara app.vue
+
+En el archivo app.vue dentro de la carpeta de componentes
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+TRANCIPCION VIDEO
+
+Por qué deberías aprender DIU bien a ver el mercado a nivel de fronten hay
+0:05
+básicamente hay tres frameworks o librerías muy importantes que serían
+0:11
+angular Ría y Bio entre otras bien De esas tres
+0:17
+la más fácil de aprender la más sencilla la que tiene una documentación mucho
+0:22
+mejor y es una curva de aprendizaje mucho más fácil es View Bio la creó
+0:29
+evangelismo programador independiente no está dentro de ninguna empresa en concreto lo creó ya conocía angular y
+0:36
+conocía también ríack y cogió lo mejor del día lo mejor de angular y desechó aquello bueno
+0:44
+aquellos puntos más conflictivos de cada uno y creó la primera versión de View incluso cuando
+0:51
+ría cambió de funcionar con clases a funcionar con hooks yo pues también lo que hizo fue realizar una actualización
+0:57
+y incorporar esta funcionalidad también envío en la versión 3 esto quiere decir
+1:04
+que cuando pasó de la versión de View 2 A View 3 aparte de seguir funcionando
+1:10
+con la sintaxis de view2 llamada option app que lo veremos en View 3 seguía
+1:17
+funcionando para mantener la compatibilidad sin ningún tipo de problemas no como pasó con angular que
+1:23
+de la versión 1 a la siguiente porción no era compatible Bueno pues en vivo es compatible pero a partir de View 3
+1:30
+apareció una nueva sintaxis mucho más rápida y efectiva acorde a los tiempos
+1:35
+llamada composición app que será la que veremos es decir nos vamos a centrar en
+1:41
+lo último desechando un poquito al anterior sí que comentaré que existe para que tengamos conocimiento pero
+1:47
+iremos a lo más nuevo por ejemplo cuando creemos un proyecto inicialmente desde
+1:52
+cero que se puede hacer de diferentes maneras en vez de utilizar webpack terminología que luego explicaremos más
+1:58
+adelante pues se utiliza bite que es otra tecnología que también diseñó Evan you
+2:04
+que cuando toque Bueno pues veremos qué es Es decir utilizaremos lo último vamos
+2:10
+a entrar en materia y vamos a empezar a hacer nuestro primer proyecto envío nuestro primer Hola mundo con un poquito
+2:15
+más para ver cómo funciona y luego veremos las actividades y para ello lo primero primero primero que tenemos que
+2:21
+hacer es crear un proyecto un proyecto tipo ya creado totalmente funcional con
+2:27
+todas las carpetas y todos los ficheros necesarios y que nosotros accederemos con visual Studio code o con cualquier
+2:33
+otro editor para poder modificar y crear nuestro proyecto esto se puede hacer de
+2:39
+dos maneras bien de la manera no voy a decir antigua Pero bueno utilizando View
+2:45
+cielay que crea este proyecto perfectamente utilizando una tecnología llamada webpack que entraremos en otro
+2:52
+momento que funciona perfectamente pero los tiempos cambian y Evan you consciente de que webpack bueno podría
+3:01
+saltarse alguno de los pasos que realiza desarrolló vite que es otra tecnología que hace lo mismo que webpack en este
+3:08
+caso que lo que hace es crear un proyecto compilarlo y coexionarlo para
+3:13
+que funcione cualquier cambio pueda ser probado al momento y todo funcione de
+3:19
+una manera mucho mucho más rápida ya que bite se salta uno de los pasos que webpack no se puede saltar por lo tanto
+3:26
+como a nosotros como usuarios nos interesa que todo sea mucho más rápido y eficiente utilizaremos la segunda opción
+3:32
+y la primera bueno la obviaremos por completo lo único que tenéis que tener instalado Eso sí es Note js para poder
+3:41
+utilizar los comandos de npm que vamos a utilizar todo el rato para comprobar si
+3:46
+tenéis instalado o no note abrís la consola con cmd si utilizáis Windows y
+3:52
+escribimos Note V para preguntar la versión si os da la versión que dice que
+3:57
+lo tenéis instalado bien Ahora lo que tenemos que hacer es utilizar npm para crear un proyecto nuevo desde cero
+4:05
+especificando las diferentes opciones que queremos hay diferentes maneras la manera más corta y la madera que yo
+4:12
+utilizo es npm init y luego le pondríamos aquí o bien view3 o bien la
+4:19
+última versión de View para que nos sirva para siempre hacemos clic en enter y aquí nos pregunta todo primero el
+4:26
+nombre del proyecto que será la carpeta que vamos a utilizar vamos a poner por ejemplo empezando Luego si queremos
+4:34
+typescript le decimos que no luego soporte de jsx le decimos que no luego
+4:40
+el view de router más adelante ahora mismo no luego Pinea muy interesante pero de momento no y tampoco vamos a
+4:47
+testear y aquí le decimos a todo que no es link tampoco queremos que no queremos
+4:52
+vivir tranquilo sin que nos dé 2.200 advertencias y aquí nos dice lo que
+4:58
+tendríamos que hacer primero ir la carpeta npm install para instalar todas
+5:03
+las dependencias que necesitamos y luego npm Run de para poner en marcha el
+5:09
+servidor y poder probarlo Pero yo lo voy a hacer de otra manera voy a poner code tecla tabulador premios code empezando y
+5:16
+ya estas opciones las voy a hacer desde visual Studio code por lo tanto aquí
+5:22
+tenemos todas las carpetas y todos los ficheros necesarios me voy a ir a la
+5:27
+terminal nuevo terminal aquí pongo npm y para que instale todas las dependencias
+5:34
+que necesitamos y poder empezar es súper rápido bien Ahora que ya tengo todas las
+5:42
+dependencias instaladas iniciales aquí vale necesito levantar el servidor para ver mi proyecto terminal nuevo terminal
+5:49
+le pongo npm y automáticamente Bueno pues se crea con
+5:55
+bit el servidor es súper rápido ha tardado los dos milisegundos bien aquí está la
+6:02
+dirección puedo abrirlo copiando y pegando o puedo utilizar la tecla como dice aquí control más clic y se me abre
+6:07
+el navegador y esto sería el proyecto tipo que evidentemente me va a servir para ver que funciona correctamente y no
+6:13
+tengo ningún problema yo todo esto aquí lo voy a eliminar para hacer mi proyecto por lo tanto me voy aviso de estudio
+6:21
+code aquí dentro de componentes tengo una serie de componentes que lo que he visto ahora también tengo un mail js que
+6:30
+lo que me dice básicamente es que inicialmente va a empezar en un componente que ya veremos lo que es
+6:36
+llamado app que está en la carpeta principal y se llama app.view que es
+6:41
+esta de aquí y además me dice que me va a importar un css que no quiero por lo
+6:47
+tanto este css principal lo voy a quitar porque el css también lo haré yo bien
+6:52
+con lo cual inicialmente ejecutará app app es esto de aquí bien en un principio
+6:59
+voy borrarlo todo porque no me interesa Y también podría borrar los componentes
+7:04
+del proyecto principal los puedo borrar sin ningún tipo de problema bien aquí en
+7:09
+App ahora si por ejemplo pruebo el servidor y me dice que el fichero app.view necesita un single file
+7:18
+component Qué significa esto Pues bien que aquí dentro bueno no hay nada lo he borrado claro cuando nosotros creamos
+7:24
+cualquier tipo de componente un componente sería como un fichero que envíe agruparía a la parte de html la
+7:31
+parte fss y también la parte de javascript por lo tanto aquí como mínimo
+7:36
+mínimo deberíamos tener la parte template que sería donde yo pondría todo
+7:42
+el html todos los botones todos los tips todas las cajas todos los inputs etcétera esto es obligado que exista si
+7:49
+yo aquí por ejemplo pongo cualquier tipo de html Hola mundo el habitual y me voy
+7:56
+al proyecto aquí veo el Hola mundo ya no me da ningún tipo de problemas por lo
+8:01
+tanto cada componente puede tener la parte de html que está ya comprendido
+8:06
+ante el template abierto y el cerrado eso sería html normal luego también tendríamos otra parte que sería los
+8:13
+estilos es decir el css aquí puedo poner Style Y si quiero que los estilos que
+8:20
+pongan aquí solo afecten a este componente Pues podría aquí podríamos por ejemplo tengo un h1 el h1
+8:28
+quiero que tenga un color por ejemplo red es css normal y aquí vería que lo
+8:35
+afecta Nada nuevo y luego la parte de javascript lo pondría en Script que en
+8:41
+la versión nueva le vamos a poner Setup porque al ponerle Setup aquí dentro del Script me ahorro diferente código que no
+8:49
+hace falta que lo ponga como por ejemplo la exportación si pongo Setup no hace falta por lo tanto se aconseja
+8:56
+evidentemente poner aquí pondría todo el código que yo quisiera utilizar por lo
+9:01
+tanto dentro de un mismo componente tenemos tres partes el html el css y la
+9:07
+parte de código y el orden da lo mismo podemos poner el orden que nosotros
+9:13
+queramos bien vamos a ir a lo interesante hemos dicho que la parte de
+9:19
+código html yo puedo utilizar el código html habitual Y esto es cierto no hay
+9:24
+ningún tipo de diferencia pero hay otras cosas en las que yo dentro del template
+9:31
+puedo Añadir cuando utilizamos javascript normalmente el html es
+9:36
+totalmente estático y cualquier cambio que yo quiera modificar con cualquier elemento del html el javascript se
+9:43
+coloca dentro del Script dentro del Script se utiliza gettel enector para desde aquí acceder en html
+9:51
+javascript me refiero a cualquier elemento del dom y modificarlo envío
+9:57
+Esto no es así es decir el selector o el get Element by Class etcétera no se
+10:03
+utilizan cualquier tipo de cambio que queramos realizar aquí al ser un entorno
+10:09
+que tiene una reactividad es decir que se modifica automáticamente no hay que hacer nada para que los datos actualicen
+10:15
+en pantalla es algo automático bien a ver por ejemplo imaginemos por aquí en
+10:21
+vez de poner Hola mundo queremos poner mi nombre queremos poner una variable que puede ir variando en cualquier
+10:26
+momento yo dentro del código de programación yo aquí puedo crear una variable utilizando con led incluso
+10:33
+podía utilizar bar pero no voy a hacer nunca y aquí podría crear una variable por ejemplo mi nombre
+10:40
+y aquí le doy un valor esto es javascript no tiene ningún tipo de problema bien si yo quiero aquí poner en
+10:48
+medio Hola mundo mi nombre en vez de poner aquí la variable pondré doble llave y aquí podré el nombre de la
+10:56
+variable que es mi nombre y aquí aparece en este caso Hola modifica y pone el
+11:03
+valor de la variable Bien también dentro de las dobles llaves podía poner cualquier tipo de expresión podía poner
+11:09
+sumas restas multiplicaciones o cualquier otra cosa si por ejemplo aquí pongo otra constante y le digo mi edad
+11:16
+pongo 18 ya me gustaría aquí puedo poner Hola tal y tendré puedo poner mi edad y
+11:26
+le podría sumar uno y me dice hola happ y tendré 19 por lo tanto dentro de las
+11:33
+llaves podemos poner cualquier tipo de expresión de javascript otro tipo de
+11:39
+característica es que el Play También incluye los eventos de tipo clic y
+11:44
+cualquier otro elemento ya no los ponemos dentro del Setup sino que lo vamos a poner directamente en la
+11:50
+etiqueta como en javascript no está nada recomendado por ejemplo aquí tenemos un
+11:55
+h1 bien el h1 es una etiqueta Este es el contenido de la etiqueta y esto es el
+12:01
+cierre Pues bien dentro del contenido podemos utilizar como hemos dicho las dobles llaves para Añadir contenido
+12:08
+Dinámico que creamos dentro del Script pero cuando nosotros queremos modificar
+12:14
+algún tipo de atributo Como por ejemplo un atributo sería aquí Class otro
+12:19
+atributo podía ser ID otro atributo podía ser Style etcétera cualquier tipo
+12:26
+de atributo lo tenemos que hacer de otra manera aquí no podemos poner doble
+12:31
+llaves porque las dobles llaves solo se ponen en el contenido entonces para poder modificar cualquier tipo de
+12:39
+atributo View utiliza una cosa que se llama Las directivas que ahora puede sonar a chino
+12:45
+pero que básicamente son palabras que ponemos aquí para que nos ayuden a hacer cosas Qué cosas Bueno pues aquí lo que
+12:53
+veremos en este vídeo será por una parte Cómo puedo Añadir un valor a un atributo
+12:59
+decir cómo puedo yo decirle que el Style tenga un valor y este valor sea una
+13:06
+variable también como por ejemplo Cómo añadir dentro de una etiqueta un If Sí
+13:13
+sí un If para que esta etiqueta se vea o no se vea dependiendo de una determinadas condiciones o bien un Ford
+13:21
+bucle para que dentro de esta etiqueta pues se creen más etiquetas en
+13:27
+javascript esto lo pondríamos directamente del código en el código pondríamos unir o un switch con un bucle
+13:33
+envío lo vamos a poner dentro de la etiqueta que se verá afectada por elif o
+13:39
+bien por un evento de tipo click Pues bien de javascript lo poníamos en la parte de código aquí lo vamos a poner en el
+13:46
+propio botón o en el propio elemento clicable como podría ser un h1 un dip o
+13:52
+lo que nosotros queramos entonces para ver algunas directivas de momento las más importantes vamos a suponer por
+13:59
+ejemplo que aquí tenemos un h1 y yo quiero que tenga un determinado estilo
+14:04
+Pero el estilo en vez de ponerlo aquí como lo he puesto aquí en este caso lo quiero asignar dinámicamente para que
+14:10
+unas veces sea de color rojo otra verde pueda modificar los estilos en ese caso lo que tendría que hacer es
+14:18
+utilizar una directiva muy importante llamada V Bin a ver qué hace ub lo que
+14:25
+hace es que me permite Modificar el atributo que yo ponga después de los dos
+14:30
+puntos en este caso yo podía poner aquí Class o ID si quisiera Modificar el classword o bien si quiero modificar los
+14:37
+estilos pondré Style bien alguien seguramente ha dicho o Style poner
+14:44
+dentro de una etiqueta Style dentro de html está muy penalizado y es totalmente
+14:49
+una mala práctica pero en View esto se utiliza bastante Aunque evidentemente lo
+14:55
+mejor es poner un Class y ponerlo aquí abajo el css que nosotros queramos pero si lo queremos modificar dinámicamente
+15:01
+lo podemos hacer de esta manera Por ejemplo yo aquí le voy a poner los estilos los estilos serían dinámicos
+15:08
+porque si no no pondría el huevin si yo quiero poner aquí un estilo fijo no haría falta ponerle la directiva esto es
+15:14
+cuando lo que yo pongo aquí será una variable yo puedo crear aquí por ejemplo mi color que le voy a dar Pues un color
+15:22
+por ejemplo Green algo muy sencillo Y si quiero Añadir algo más pues por ejemplo un font yo que sé de 3M y lo que yo
+15:31
+quisiera darle Yo podría tener diferentes variables cada uno con
+15:36
+estilos diferentes Si yo aquí quiero Añadir este estilo aquí pondré mi color
+15:42
+escrito entre comillas Sí además de esto quito este estilo Porque si no tendrá
+15:48
+dos y prevalecería el h1 que tendría de Todos los estilos para que coja este
+15:53
+estilo de aquí accedo al navegador y veo que Hola Hub y tendré 19 más grande que
+15:59
+antes y de color verde evidentemente coge estos estilos de aquí y se utiliza
+16:04
+para cualquier cosa si por ejemplo yo aquí tuviera uno que se llamara por ejemplo azul color Blue y lo quisiera
+16:14
+hacer A través de este selector de aquí aquí ya no utilizaría Style sino que
+16:20
+utilizaría Class y aquí en vez de poner color bueno podría poner otra que podría
+16:25
+ser el selector css correspondiente que se llamaría en este caso azul y aquí le
+16:32
+pondría selector y lo hace correctamente de color azul el
+16:38
+tamaño normal de cualquier h1 Además del v-bin que veremos más adelante
+16:44
+evidentemente me voy a cerrar esto de aquí también tendremos por ejemplo podemos poner un evento si yo aquí pongo
+16:50
+un botón no tiene por qué ser botón Pero bueno es mucho mejor y quiero que al
+16:56
+hacer clic en el botón se ejecute cualquier tipo de acción en vez de poner un ATV o un clic en la parte de código
+17:04
+lo tengo que poner en la misma etiqueta donde Yo haré clic en este caso aquí
+17:10
+pondría otra directiva que se llama V on aquí V on lo que hace es indicar Qué
+17:18
+evento tiene que ejecutar vale aquí en este caso quiero hacer el clip por lo
+17:23
+tanto pondré clic y aquí indicaría que función quiero que ejecute bien en el
+17:29
+caso del VPN y en el caso del V on en estos dos en concreto existe una criatura en vez de poner huevin que es
+17:37
+totalmente correcto lo puedo eliminar quedando en este caso los dos puntos funcionaría Exactamente igual y aquí en
+17:43
+vez de poner V on que también es correcto sin ningún tipo de problemas lo puedo sustituir por la arroba sin ningún
+17:51
+tipo de problemas y normalmente Así es mucho más corto y es lo que se utiliza habitualmente y aquí tendría que poner
+17:56
+la función que tengo que ejecutar que en este caso voy a poner un por ejemplo
+18:01
+saludar y ya está la función donde la crearíamos la crearía Eso sí dentro del
+18:08
+apartado de Script aquí podría crear un Fusion normal o bien un con función de
+18:13
+flecha llamado saludar aquí la sintaxis habitual y aquí podría poner lo que yo
+18:21
+quiera por ejemplo un consoló hola Por ejemplo y cuando hiciera clic en saludar
+18:27
+me vendría a esta función vengo aquí hago un clic y al abrir el inspector
+18:33
+Aquí tengo miola si además quiero enviarle algún tipo de parámetro Pues
+18:39
+aquí se lo podría enviar si yo quiero que me diga hola más el nombre correspondiente aquí le puedo añadir los
+18:46
+paréntesis y le pondría lo que yo quiero enviar que cuidado si pongo una variable como es mi nombre aquí iría sin doble
+18:54
+llave porque la doble llave únicamente va cuando es un contenido de una caja y
+19:00
+aquí es javascript por lo tanto lo pondríamos tal cual si yo aquí le digo saludar mi nombre y aquí añado un
+19:08
+parámetro por ejemplo nombre voy a ser mi nombre Igualmente aquí ya lo podía utilizar lo puedo poner de esta manera o
+19:15
+utilizando las comillas invertidas podría poner primero hola y luego para
+19:21
+indicar la variable en este caso nombre tapicería la expresión de javascript
+19:27
+nombre y de esta manera pues a la hora de hacer clic en el botón me aparece aquí en este caso olajab con lo cual
+19:34
+funciona correctamente si no le envío ningún tipo de parámetros evidentemente
+19:39
+aquí pues no pondría absolutamente nada y lo dejaría así pero el problema viene
+19:46
+cuando los valores de las variables no son fijos sino que se modifican a tiempo
+19:51
+real Como por ejemplo un contador o el nombre que escribe un usuario o cualquier interacción del usuario en ese
+19:57
+caso cuando el valor de una variable cambia para que automáticamente este valor cambie también en el template Hay
+20:04
+que crear una variable reactiva esto en la versión antigua utilizando option Api
+20:10
+cualquier tipo de variable que yo escribía dentro de un apartado que ya no existe amado Data todos los valores eran
+20:17
+reactivos ahora en la versión utilizando compositioning esto ya no es así cuando
+20:24
+yo creo una variable tengo que decidir si va a ser reactiva o no es decir si es
+20:29
+reactiva quiere decir cuando yo cambie el valor de esa variable automáticamente ese cambio produce que en el template se
+20:37
+modifique ese dato si por ejemplo es una variable como está aquí que no va a
+20:42
+cambiar nunca porque no hay ningún input ni hay ningún tipo de código que lo cambie no hace falta que sea reactiva
+20:48
+porque no se va a modificar nunca vamos a hacer un ejemplo utilizando un contador por lo tanto Aquí voy a
+20:55
+eliminar esto de aquí voy a poner un botón que será para reducir el contador
+21:01
+con un menos y luego voy a poner otro que lo que hará será bueno pues ampliarlo Y en medio voy a poner una
+21:08
+caja que lo que hará será Mostrar un valor del contador Aquí voy a poner una
+21:14
+variable que irá incrementándose por ejemplo contador evidentemente todo esto
+21:19
+de aquí ya no me sirve bien y aquí debería crear uno un clic para que al
+21:25
+hacer clic en este botón vaya a una función que la variable contador la reduzca de uno en uno y este a otra
+21:31
+función que le sume uno y automáticamente debería ir modificando esta variable de aquí bien si lo hiciera
+21:38
+como hasta ahora Estamos utilizando yo aquí que no es la manera correcta pero vamos a ver qué pasaría yo aquí podría
+21:45
+crear un contador con el valor inicial por ejemplo a cero bien aquí podría
+21:50
+crear un evento de tipo clic para que vaya a una función llamada Por ejemplo
+21:56
+decremento que tengo que crearla y luego en el otro botón voy a crear otro evento
+22:03
+para que vaya a una función llamada incremento estas funciones las voy a
+22:09
+crear aquí primero decremento la función de flecha Vale y aquí lo que haría en
+22:15
+este caso sería decrementar el valor y la otra si lo hiciera de esta manera luego lo modificaremos para que sea
+22:22
+correcto aquí en incremento lo que haría sería incrementar si esto yo lo pruebo
+22:29
+evidentemente es feísimo porque no tiene nada absolutamente nada de css aparece el 0 inicial es correcto pero cuando
+22:35
+hago clic en el botón no se modifica y cuando hago clic en el botón tampoco se modifica no funciona pero la variable sí
+22:43
+que va aumentando Lo único que no se actualiza en pantalla porque la variable contador no es una variable reactiva
+22:50
+para ello lo que tengo que hacer en este caso es importar red que nos permite
+22:55
+crear variables que sean reactivas según se modifique se modifiquen también y se actualice en pantalla y esto lo tengo
+23:02
+que importar en este caso de View si no le importo no lo puedo utilizar de esta
+23:08
+manera todo es mucho más liviano y más rápido bien Ahora a la hora de crear la
+23:13
+variable letra que decir que tiene que ser una variable reactiva y esto se hace añadiendo aquí red y luego poniendo el
+23:21
+valor que tiene que poner de esta manera he creado una variable y es reactiva cuando se modifique esta variable
+23:29
+también se modificará aquí pero ahora Aquí tengo que añadir algo para que sepa
+23:35
+que esta variable es reactiva no utilizaré Red porque ya está utilizado cuando yo quiero Modificar el valor de
+23:43
+una variable reactiva lo quiero modificar De cualquier manera tengo que Añadir aquí value pongo punto value y
+23:50
+punto si la variable no fuerce reactiva no haría falta ponerlo y ahora ya funciona para adelante y también para
+23:58
+atrás es una variable reactiva que automáticamente modifica todo el contenido bien ya sabéis si queréis que
+24:04
+esto por ejemplo esté un poquito más separado tendríamos que añadirlo aquí Aquí estos de antes le diría que todos
+24:11
+los spam que tenga en este componente tengan por ejemplo un padding por arriba
+24:17
+y por abajo de Cero y por la derecha y por la izquierda de 5 píxeles y de esta manera mucho mejor bien Ahora
+24:24
+me interesa que dependiendo del valor de la variable o por ejemplo pueda
+24:30
+modificar o bien el background o el color de los botones o bien el propio color del elemento o Añadir algún tipo
+24:37
+de imagen externa hacer alguna cosa en un principio lo que voy a hacer en este
+24:43
+caso es Modificar el Style de este número para que cuando pase de una
+24:48
+determinada cantidad aparezca de otro color y cuando sea menos de una cantidad aparezca de un color por ejemplo rojo y
+24:54
+cuando pase de una determinada cantidad aparezca un color verde esto sería cambiando el Style de este spam lo puedo
+25:02
+cambiar con Class o lo puedo cambiar utilizando el Style es mucho mejor utilizando Class es decir que aquí
+25:10
+podría poner un rojo por ejemplo no existe evidentemente que tendría un color red y aquí otro que fuese por
+25:18
+ejemplo verde que tuviese color gris esto evidentemente no hay ningún elemento llamado rojo ni tampoco ningún
+25:24
+elemento llamado verde para que esto fuera fijo no lo va a ser pero si fuera fijo yo aquí en este spam yo le podría
+25:31
+poner un Class por ejemplo verde y evidentemente se vería siempre verde pero yo quiero que vaya modificando
+25:38
+dependiendo de los valores por lo tanto en vez de ponerle aquí verde voy a crear una variable que va a ser el color el
+25:46
+color que va a tener por ejemplo mi color que puede ser uno o bien puede ser otro bien esta variable yo tengo que
+25:54
+pensar si va a ser reactiva o no cuando mi color cambie mi color podrá ser o
+26:00
+bien rojo o bien verde si yo quiero que cuando el valor de mi color cambia rojo o cambia a verde mi elemento también
+26:06
+cambie de color rojo a color verde la variable tiene que ser reactiva si por el contrario cuando cambia rojo a verde
+26:12
+no tiene que haber ningún cambio en pantalla no hace falta que sea reactiva en este caso tiene que ser reactiva
+26:18
+porque yo quiero que se modifique a tiempo real por lo tanto mi color voy a ponerlo junto con la otra mejor mi color
+26:25
+será una variable reactiva y aquí le doy el valor inicial si yo por ejemplo
+26:31
+quiero que inicialmente no sea verde ni tampoco sea roja voy a poner por ejemplo otro que va a ser azul aquí le digo azul
+26:39
+que ya tenía antes Y aquí le pongo Blue bien aquí el valor inicial que va a
+26:45
+tener va a ser azul como azul Es un selector es un String no es una variable
+26:51
+por lo tanto lo pongo entre comillas bien este mi color tiene que ir en
+26:56
+alguna parte tiene que ir aquí aquí no puedo poner mi color porque si no envío entendería que dentro de mi Style hay un
+27:03
+selector llamado mi color como tiene que ser Dinámico Aquí voy a poner el v-ving
+27:09
+o directamente los dos puntos que sería la abreviatura de vvin aquí le digo que
+27:14
+tiene que modificar tiene que Modificar el atributo Class y aquí ya puedo poner una variable que será mi color ahora
+27:20
+inicialmente ya está de color azul perfecto lo único que cuando haga clic evidentemente no cambia tengo que
+27:26
+modificarlo en algún lugar bien tengo que Modificar el valor de mi color cuando lo tengo que modificar Por
+27:32
+ejemplo si yo quiero que esté de color rojo cuando sea menor de 0 por ejemplo
+27:38
+lo tengo que poner en la función de decremento aquí aquí se decrementa uno y
+27:43
+puedo hacer con ternarios o lo puedo hacer con un If normal posiblemente es más fácil y le voy a decir que mira que
+27:49
+cuando el contador punto value estoy haciendo referencia a una variable de tipo reactivo por lo tanto hay que poner
+27:56
+siempre el value Vale cuando esto sea menor que cero lo que quiero es modificar es el valor de mi color punto
+28:04
+value porque es reactivo Y le doy el nuevo valor el nuevo valor yo creo que
+28:09
+se ponga rojo y aquí tengo rojo por lo tanto le voy a dar este valor que como
+28:15
+es un selector también iría entre comillas bien cuando por ejemplo sea de
+28:22
+5 quiero que esté de color verde Bueno pues voy a copiar esto de aquí lo voy a poner aquí cuando sea mayor de 5 pues
+28:29
+quiero que esté de color verde y listo ahora está de color azul Cuando paso de
+28:34
+5 está de color verde y cuando paso de cero está de color rojo y por tanto
+28:41
+funciona correctamente ahora vamos a Añadir otra directiva el vii que sería
+28:47
+un condicional pero en vez de colocarlo dentro del Script lo vamos a colocar en
+28:52
+el template para que una de las etiquetas se muestre o no en función de algún tipo de característica por ejemplo
+29:00
+aquello que nosotros queremos que se muestre o no se muestre va a ser un DIF que va a poner por ejemplo escribe una
+29:07
+cantidad mayor de 0 esto Únicamente se mostrará cuando nuestro contador sea
+29:14
+menor de cero si lo colocó así evidentemente se va a colocar siempre con lo cual las directivas las colocamos
+29:21
+siempre dentro de la etiqueta que tiene que verse afectada en este caso será vive y aquí de una manera muy fácil
+29:28
+únicamente tendríamos que escribir la condición que queremos que se cumpla para que esta etiqueta se muestre Bueno
+29:35
+pues tiene que mostrarse cuando contador sea menor de cero si no se cumple esta
+29:41
+condición No veremos esta caja y seguro que te has dado cuenta de una diferencia que es que cuando utilizamos cualquier
+29:48
+variable dentro del template no se escribe el punto value el punto value
+29:54
+Únicamente se escribe cuando la utilizamos dentro del Script ahora por ejemplo estamos en cero vamos para
+30:01
+arriba ningún problema y al llegar a una cantidad que cumple la condición el dip
+30:06
+se muestra evidentemente cuando la condición ya no se cumple ya no se muestra si nosotros quisiéramos por
+30:12
+ejemplo que apareciera otro Cartel cuando no se cumpliera esta condición es decir en el resto de casos podríamos
+30:18
+poner un vels Y en este caso el único requisitos que tiene que ir justo después de un vive aquí pondríamos el
+30:26
+elche sin ningún tipo de condición y aquí lo que tendría que Mostrar por ejemplo cantidad correcta aparecería una
+30:33
+o bien la otra aquí aparece cantidad correcta y cuando paso de cero aparece
+30:39
+la otra bien en este caso elif y después el els justo seguidos únicamente nos
+30:45
+iría bien cuando hubiera dos posibilidades pero si hubiera más de una tenemos que utilizar el Else If igual
+30:51
+que haríamos con javascript por ejemplo imaginemos que yo quiero Que aparezca aquí escribe una cantidad mayor de cero
+30:58
+Pero cuando llegue a 5 pues aparezca otro que sea escribe una cantidad menor
+31:04
+de 5 en ese caso como habría tres posibilidades que sería la describe una
+31:09
+cantidad mayor de cero la describe una cantidad menor de 5 y luego la tercera opción sería que no
+31:15
+escriba nada Aquí le voy a poner un Else If cuando ponemos en el shift es obligado que pongamos una condición con
+31:23
+el ls no hace falta pero con el lsyff sí mayor o igual que 5 de tal manera que
+31:29
+ahora no aparece ningún tipo de aviso ahora aparece escribe una cantidad mayor de cero se elimina y cuando esto llega a
+31:35
+5 o mayor de 5 aparece el otro cuadro con lo cual es totalmente correcto una
+31:42
+directiva muy parecida al If al Else If y al Else es el V show que lo que hace
+31:47
+es Mostrar o no una etiqueta y más yo no me dirá Bueno pues el vi y el V show
+31:52
+hacen lo mismo A ver el resultado final parece el mismo pero no lo es porque el VIP el ls If y el Else los tres lo que
+32:00
+hacen es dibujar o no ese elemento dentro del dom decir si no se cumple la
+32:05
+condición directamente la caja no se dibuja de ninguna manera sin embargo lo
+32:11
+que hace el overso es un display Non es decir sí que la dibuja pero le añade la
+32:16
+propiedad para que no se vea pero primero la dibuja y luego la oculta por
+32:21
+lo tanto la recomendación sería que si yo quiero mostrar algo de manera permanente o bien ocultarlo de manera
+32:26
+permanente utilizaré elif el el shift o viene el Else Pero si yo quiero ir
+32:32
+mostrando y ocultando continuamente un elemento me va a funcionar mucho mejor el V show pero Aunque el resultado final
+32:39
+sea un poco parecido el funcionamiento es diferente vamos a hacer un ejemplo para poder verlo imaginemos por ejemplo
+32:45
+Aquí que voy a crear una caja que por ejemplo ponga no está permitido el
+32:51
+número cero bien Esto únicamente tiene que mostrarse cuando está el número 0 si
+32:57
+no está el número 0 no hace falta que se muestre bien aquí podría poner unir perfectamente y funcionaría bien pero voy a utilizar un V show aquí el V show
+33:05
+lo único que tiene que evaluar es el valor de una variable si esta variable que venga aquí es true lo que hará será
+33:12
+mostrarse y si es lo que hará será ocultarse por tanto aquí Me falta una variable que me indique eso vamos a
+33:19
+poner por ejemplo visible bien esta variable la tengo que crear en algún sitio voy a crearla dentro del Setup y
+33:26
+le voy a decir aquí const aquí visible que es como se llama la variable y aquí le voy a poner por ejemplo Falls por lo
+33:33
+tanto inicialmente esto no se ve pero no se ve nunca nunca se ve si yo aquí le
+33:40
+pusiera true se vería hasta inicialmente que luego se solaparía con el otro porque hay dos vale Pero a mí me
+33:47
+interesa que esto no sea fijo sino que vaya variando y que en función de alguna característica sea o no sea visible por
+33:54
+lo tanto vamos a completarlo para completar esta parte lo único que tenemos que hacer es ir modificando el
+34:00
+valor de visible para que sea true o bien sea false inicialmente es Porque
+34:06
+empezamos en cero y tiene que ver el cartel Pero esto tiene que ir variando cuando se modifique visible también
+34:12
+tiene que actualizar si esto en pantalla por lo tanto visible ahora ya tiene que
+34:18
+ser una variable reactiva le ponemos true bien en alguna
+34:23
+parte hay que modificar este valor Entonces nosotros podríamos pensar de manera errónea pero lo vamos a hacer
+34:29
+erróneamente primero que lo podíamos poner dentro de la función de decremento y de la función de incremento aquí
+34:37
+podría Añadir un visible punto value porque lo quiero modificar y esto en vez
+34:42
+de hacer un If o bien hacer tampoco un ternario puedo hacer una expresión que me va a devolver true false cuando tiene
+34:48
+que ser fruit Bueno pues cuando contador punto value sea igual igual que cero
+34:54
+Cuando esto de aquí se cumpla Esto será fruit y cuando no será podría esto
+35:00
+de aquí lo podría copiar lo podría pegar aquí dos veces ya no me gusta pero lo dejaré así aquí aparece no está
+35:06
+permitido el número 0 perfecto maravilloso genial muy bien Vengo para aquí lo hace correctamente únicamente aparece cuando es 0
+35:13
+luego se quita perfecto maravilloso genial muy bien pero esto está aquí dos veces ejecuta en cada momento y además
+35:21
+me obliga a tener y utilizar aquí una variable reactiva y además tener que
+35:28
+hacerlo manualmente si inicialmente tiene un valor u otro cuando todo tenía
+35:33
+que ser de manera automática entonces para no tener que hacer todo esto lo que voy a hacer es utilizar una función
+35:38
+maravillosa de View que son las propiedades computadas esto Qué
+35:44
+significa Bueno pues significa que yo en vez de hacer toda la lógica dentro de diferentes lugares que además cada vez
+35:51
+que hago clic aunque no sea necesario ejecutarla en cada momento puedo Añadir aquí la referencia a una especie de
+35:59
+función que sería la propiedad computada que lo único que hace es ejecutar un código y devolver un resultado este
+36:06
+código Se podría poner también en el template Lo que pasa que sería muy largo o también en una función como está ahora
+36:13
+la diferencia entre poner una función y ponerlo en una propiedad computada Es que la propiedad computada es reactiva y
+36:20
+se ejecuta automáticamente y además de eso una de las características muy importantes es que todo lo que pongamos
+36:27
+en una propiedad computada solo se ejecuta si los valores han cambiado ya
+36:32
+que el resultado se almacena en caché por lo tanto se ejecutará la propiedad computada únicamente si los valores son
+36:39
+diferentes Si no han cambiado no sin embargo al colocarlo en una función se ejecuta Sí o sí en cada momento que pasa
+36:47
+por allí vamos a implementarlo porque es la mejor manera de entenderlo correctamente hemos dicho que hay que
+36:52
+crear una función computada las funciones computadas se crean en el Script en cualquier parte por ejemplo
+36:58
+aquí al final ponemos cons Le ponemos el nombre de la propiedad computada que nosotros queramos hacer por ejemplo
+37:04
+comprobación o cualquier otra luego le ponemos igual a computed
+37:09
+y dentro de los paréntesis ponemos una función de flecha normal vale Aquí el
+37:16
+único requisito que tenemos que tener en cuenta es que una propiedad computada tiene que devolver algo es decir tiene
+37:22
+que haber al final un retur para devolver algo al lugar desde el que fue llamada desde dónde llamaremos a esta
+37:30
+propiedad computada pues desde aquí quitamos esta opción que no nos sirve para nada y ponemos la comprobación la
+37:37
+propiedad computada quiere decir que ya esto de aquí no nos hace falta porque la hemos borrado no nos hace falta ninguna
+37:44
+variable que nos indique nada lo hace automáticamente la propiedad computada bien entonces lo que hemos dicho es que
+37:50
+esta línea de aquí se ejecuta cada vez que se ejecuta la función incremento igual que esta de aquí por lo tanto la
+37:58
+quitamos de los dos sitios y la vamos a colocar aquí dentro si yo coloco esto aquí me va a dar un error porque la
+38:05
+variable visible ya no existe por lo tanto lo que voy a hacer es quitar esta parte de aquí y ponerle que retorne el
+38:13
+resultado de esta expresión contador punto value Igual igual a cero si se cumple esta condición devolverá true y
+38:20
+si no se cumple esta condición devolverá false a quién se la devolverá Bueno se
+38:25
+lo devolverá aquí y de manera automática esto se irá actualizando automáticamente pero muy importante para que funcione el
+38:33
+computed hay que importarlo e inicialmente en la versión anterior no
+38:39
+hacía falta ya estaba integrado automáticamente pero en la nueva versión de composición ipi hay que importarlo
+38:45
+cuando lo vayamos a utilizar porque de esta manera todo va mucho más rápido Únicamente se carga aquello que queremos
+38:51
+utilizar y funciona correctamente a que aparece inicialmente no está permitido el número 0 luego desaparece que aparece
+38:57
+el otro de los mensajes y cuando bajo de cero aparece el otro con lo cual funciona correctamente todo esto que
+39:05
+ahora viene un poquito de nuevo Lo Vais a practicar en la actividad para que quede totalmente Claro ya que sin
+39:11
+práctica No hay aprendizaje pero para poder hacer la actividad tengo que explicar dos cosas más una es el tema de
+39:18
+las imágenes para Añadir imágenes también de manera dinámica ya que si no fuera dinámicamente pues iría a colocar
+39:24
+como en html aquí pondríamos la ruta aquí pondríamos el texto alternativo y después pondremos si aquí fuera una
+39:31
+imagen online pues pondría el http con la dirección entera y esto funcionaría perfectamente también al ser una URL
+39:38
+esto de aquí lo podría poner en una variable por ejemplo la variable imagen
+39:44
+1 aquí ya tendría que poner el v-bin o bien la abreviatura y luego aquí crearía
+39:50
+la variable y esto seguiría funcionando perfectamente no hay ningún problema pero cuidado cuando las imágenes son
+39:58
+locales hay una gran diferencia porque yo las puedo colocar en diferentes lugares si yo por ejemplo lo coloco
+40:04
+dentro de assets cuando esto se compile aquí Únicamente se colocan aquellas
+40:11
+imágenes o Los ficheros que tienen que ser procesados Como por ejemplo css Pero si yo quiero poner imágenes estáticas
+40:17
+las puedo dejar dentro de public y aquí no hay ningún tipo de procesamiento por
+40:23
+ejemplo Aquí tengo una imagen llamada ok webp que está dentro de public y luego
+40:28
+dentro de assets tengo otra que se llama logo svg si yo quiero Acceder al logo
+40:33
+svg aquí la tendría que importar como hemos hecho con esta de aquí yo podría aquí poner import aquí le pongo el
+40:40
+nombre de la imagen por ejemplo imagen 2 y aquí le digo dónde está esa imagen 2
+40:45
+que en este caso estaría dentro de assets y dentro de assets sería por
+40:51
+ejemplo logo punto svg si aquí le digo imagen 2 funcionaría perfectamente aquí
+40:59
+aparece imagen 2 no hay ningún problema pero si no lo quiero importar Y quiero acceder y que funcione directamente en
+41:06
+cualquier momento lo que podría hacer es colocar una imagen la imagen en vez de colocarla dentro de assets la podría
+41:12
+colocar dentro de public public es una carpeta que está siempre accesible y que se puede acceder sin que el navegador
+41:19
+tenga que compilar y tenga que hacer nada con ella la coge directamente por lo tanto yo podría aquí poner dentro de
+41:26
+imagen 1 voy a borrar esto de aquí y voy a colocar el nombre de la imagen que se llama
+41:31
+ok.webp vale perfectamente ahora modifico el que la imagen 2 por la imagen 1 va a funcionar perfectamente
+41:38
+pero si aquí por ejemplo le pusiera lo mismo que le he puesto aquí es decir la
+41:43
+ruta en la carpeta assets se lo coloco aquí a la hora de probarlo ya no
+41:49
+funciona Porque todo lo que ponga dentro de assets se tiene que previamente y la
+41:54
+ruta ya es diferente y evidentemente esto lo voy a poner así y evidentemente aquí dentro de la etiqueta img podría
+42:01
+poner cualquier directiva como Vid vs cualquiera de ellas Bien el otro de los
+42:07
+conceptos que tenemos que tener muy en cuenta parte de las imágenes que lo iremos viendo ahora todo el curso porque es imposible hacer nada sin imágenes
+42:13
+Bueno pues será que a veces Tendremos que cargar datos datos externos que al
+42:18
+principio van a estar localmente luego estarán externamente entonces si yo por ejemplo quiero Añadir un array de
+42:24
+objetos que lo podía Añadir aquí evidentemente va a ser todo muy largo lo normal lo correcto es Añadir un js en
+42:32
+cualquier lugar para luego poder importarlo si lo importamos da igual donde esté lo pondremos evidentemente dentro de src yo aquí puedo crear lo que
+42:40
+sería un archivo de datos punto js aquí dentro de datos Pues podría crear los
+42:47
+datos que fueran un array con un objeto para que hacerlo más grande por ejemplo
+42:53
+aquí la web podría poner la web y Bueno cualquier otro dato hará por ejemplo con
+42:58
+esto ya me sirve y lo que haría ese de aquí exportarlo para que exportarla directamente datos para poder utilizar
+43:05
+este array de un objeto únicamente es muy sencillo claro desde app punto View
+43:10
+lo que tendría que hacer aquí es primero importarlo importaría en este caso el
+43:16
+nombre que sería datos se llaman igual pero aquí podría llamarse de cualquier otra manera aquí podría poner por
+43:21
+ejemplo valores para que fuese diferente si lo quisiera hacer así tengo que exportar valores que está dentro del
+43:27
+fichero datos por lo tanto Aquí le voy a poner entre llaves porque quiero obtener
+43:33
+en concreto este array y le diré Dónde está en este caso está dentro del mismo
+43:39
+lugar dentro del mismo lugar donde está app punto View está aquí y se llama datos punto js si yo Después bueno Esto
+43:47
+de aquí lo voy a eliminar si yo Después de aquí dentro de imagen 1 le puedo poner en este este caso valores 0 Bueno
+43:55
+solo hay uno punto web este imagen 1 lo tendría que poner aquí lo he borrado y
+44:00
+mg y aquí le indicó imagen 1 y funcionaría correctamente Esta es la
+44:06
+actividad que tienes que intentar hacer la actividad consiste en lo siguiente Primero te podrías descargar un array de
+44:13
+objetos es un array que tiene diferentes objetos y una imagen que tiene que ir localmente la aplicación es para
+44:19
+reservar una cita romántica con tu Rey preferido Tu Rey evidentemente aquí
+44:25
+están cada uno de ellos a donde aparece el nombre del rey el precio que tiene reservar la cena con él y si trabaja
+44:31
+fines de semana únicamente o bien no hay que tener en cuenta que el nombre va en algunos casos va en minúscula y otras va
+44:38
+en mayúscula y que aquí no hay ninguna ruta de las imágenes únicamente está el
+44:43
+nombre el precio y el fin de semana Por lo tanto al final la aplicación utilizando los contadores aparece el
+44:50
+primer Rey el primer rey pertenecería al primer objeto pero que es el cero pero aquí en vez de poner cena cero que
+44:57
+Quedaría muy raro para las personas que no tienen conocimientos en programación aquí lo que ponemos es cena 1 igual que
+45:03
+en el botón ponemos siguiente uno de 7 hay únicamente un botón para pasar al
+45:08
+siguiente rey 2 de 7 3 de 7 etcétera etcétera por lo tanto Aunque empiezan el cero porque el primer objeto es el
+45:15
+objeto número 0 aquí se muestra el siguiente el uno luego Aquí aparece escena 3 este sería el contador con el
+45:22
+rey godo y aquí tenemos el nombre el nombre la primera va en mayúsculas y el resto en minúsculas por lo tanto habrá
+45:28
+que Modificar el dato del objeto Aquí está el precio no hay ningún problema bien Aparte de lo que ya aparece lo de
+45:36
+los fines de semana está aquí si sólo trabaja fines de semana que aparece solo fines de semana pero en el momento que
+45:42
+trabaje de lunes a domingo a que aparecerá de lunes a domingo con otro color también si el precio es mayor de
+45:49
+100 no ocurre nada pero cuando el es menor de 100 como es el caso aquí
+45:55
+aparece un texto que es un precio que es el 10% de descuento y en vez de 71 hacen
+46:01
+un precio de 10% que será en este caso 64.5 y cuidado únicamente aparecen dos
+46:08
+decimales y también se muestra esta imagen de aquí que lo tenéis a nivel
+46:13
+local bien las imágenes es otro cantar porque las imágenes no están en el proyecto las imágenes están en una URL
+46:21
+por lo tanto a través del nombre del rey réfes vinto por ejemplo en este caso y
+46:27
+la ruta que es https dos puntos barra barra
+46:32
+www.html6.es barra img barra Rey guión bajo y después el valor que hay aquí más
+46:38
+punto png tenéis que construir con propiedades computadas tenéis que
+46:44
+construir esta ruta para poder Mostrar aquí el Rey en cuestión y evidentemente
+46:49
+al llegar al último rey y hacer clic voy a empezar en el cero que aunque es el
+46:54
+objeto cero se muestra siempre el uno ahora es tu turno detén aquí el vídeo
+47:00
+para intentar hacer la actividad o sigue viéndolo para acceder a la solución Esta
+47:05
+es una manera de solucionar cada uno de los puntos de la actividad pero evidentemente Hay muchísimas más maneras
+47:12
+Empezamos el proyecto primero creando un proyecto nuevo le ponemos aquí npm init
+47:19
+y luego View latex para que instale y utilice la última versión aquí nos
+47:24
+pregunta a cada uno de los datos el nombre del proyecto y de la carpeta actividad uno no queremos esta IP skin no queremos jsx de momento no queremos
+47:31
+el router no queremos piña tampoco queremos nada de testing y le ponemos a todo que no tampoco es link tenemos un
+47:37
+proyecto totalmente limpio Ahora nos vamos a ir con code tabulador le damos
+47:44
+nos abre el proyecto nos vamos a los componentes de momento los podemos
+47:49
+eliminar por completo en Main js vamos a mantener el Main css para todos aquellos
+47:56
+css globales ahora únicamente tenemos un único componente con lo cual no hay
+48:01
+problemas que será este de aquí que evidentemente vamos a entrar y lo vamos a eliminar bien lo siguiente que
+48:07
+podíamos hacer sería por una parte crear los tres apartados Por una parte el apartado de template por la otra el
+48:14
+apartado de Script con el Setup muy importante porque nos da mejoras que nos
+48:20
+quitan mucho trabajo y luego también otro que podemos poner un Style para que
+48:26
+lo que pongamos aquí sólo influya a este componente como aquí no tenemos más componentes no hay mucha importancia
+48:32
+pero lo tendrá en otros proyectos luego nos faltará leer los datos los datos no podemos poner en un principio donde
+48:38
+queramos pero lo vamos a poner en la misma carpeta donde está el app.view que
+48:43
+es dentro de ese rc por lo tanto aquí creamos un nuevo fichero le ponemos datos punto js y aquí lo pegamos lo
+48:52
+podéis descargar en la URL que aparece en pantalla bien Por lo tanto ya tenemos aquí los datos Qué es un array con
+48:59
+diferentes objetos y cada objeto tiene el nombre del rey por otra parte el precio y por la otra si únicamente
+49:06
+quiere trabajar fines de semana o no bien Entonces esto hay que utilizarlo
+49:11
+dentro de View por lo tanto vamos a importarlo le ponemos import como no
+49:17
+estamos importando todo el fichero sino que importamos únicamente aquí productos
+49:23
+lo que vamos a hacer es desestructurarlo para poder acceder directamente a este dato para desestructurarlo ya lo veremos
+49:30
+más adelante pero utilizamos de momento al menos las llaves una llave y ponemos
+49:35
+aquí productos y le tenemos que decir dónde está le decimos que esto tiene que ir a la misma carpeta donde está app.eu
+49:42
+por lo tanto le ponemos punto barra y aquí simplemente le decimos Cuál es el fichero datos o bien datos.js a mí me
+49:50
+gusta poner siempre también en j Aunque no es importante y funciona Exactamente igual perfecto maravilloso genial muy
+49:56
+bien no hay que olvidarse que para que esto funcione aquí Tenemos que tener colocado un export si no no podemos
+50:04
+acceder a sus datos perfecto bien ahora tenemos que ir paso a paso una vez ya tenemos los productos vamos a hacer el
+50:10
+contador y luego iremos añadiendo cada una de las funcionalidades es importante hacer uno a uno por tanto vamos a hacer
+50:17
+solo de momento al menos un h2 con el contador realmente el contador tiene que
+50:24
+empezar en el cero porque tiene que Acceder al primero de los productos que sería a este de aquí que es el cero Pero
+50:30
+tiene que mostrarse uno bien Aquí vamos a poner por ejemplo cena y aquí el
+50:36
+contador que no existe todavía vale Este contador tiene que ser reactivo para que
+50:42
+cuando cambie el contador Pues aquí también se vaya modificando por lo tanto Aquí voy a importar de hecho red y esto
+50:50
+está en View cuando luego utilice propiedades computadas lo añadiré Aquí bien para poder crear este contador le
+50:59
+digo con aquí le pongo el nombre de la variable contador le digo que es una variable reactiva Y le doy el valor
+51:05
+inicial que tiene que ser cero tiene que ser 0 Aunque yo veré uno y aquí ya veo
+51:11
+una de las primeras cosas que tenemos que tener en cuenta es que los importes tienen que estar todos agrupados al
+51:17
+principio y después todo lo que nosotros queramos Añadir después bien este contador empieza en el cero pero yo no
+51:24
+quiero que ponga cero quiero que ponga uno por lo tanto le voy a poner más uno para que no le sume uno sino que cuando
+51:31
+contador sea cero muestre el uno no estoy haciendo contador más más con lo
+51:36
+cual estaría modificando el contador ni tampoco estoy haciendo contador igual a contador más uno simplemente le digo que
+51:43
+muestre uno más del contador pero contador no se modifica en ningún
+51:48
+momento sigue siendo cero bien Me hace falta un botón para poder seguir avanzando por lo tanto voy a poner aquí
+51:54
+un botón que ponga siguiente vale este botón aparte del siguiente también
+52:01
+tendrá aquí aquí pondrá uno una barra y luego el número de elementos uno de 72
+52:07
+de 7 3 de 7 etcétera Pero ni va a poner uno todo el rato ni va a poner 7 por
+52:13
+tanto aquí lo que va a poner es el contador más uno es decir cero pero pondrá el 1 bueno Y aquí tiene que poner
+52:20
+el número de elementos que hay lo que nunca haría sería poner 7 Porque cuando
+52:25
+utilizamos arrays evidentemente el número de valores puede variar en cualquier momento por lo tanto Aquí
+52:31
+vamos a crear uno que sea el total de elementos y aquí le voy a poner productos y utilizar la propiedad led
+52:39
+esta variable no tiene por qué se reactiva porque nunca se van a modificar
+52:45
+a tiempo real al menos nunca se van a Modificar el número de productos no tiene que actualizarse nada por lo tanto
+52:51
+aquí no hace falta que le ponga red este total es básicamente para ponerlo Aquí
+52:57
+también tenemos que ser conscientes esto lo voy a cerrar en que cuando yo estoy haciendo referencia a alguna variable
+53:03
+dentro del template nunca nunca se pone el punto value Únicamente se pone el
+53:11
+punto Vale cuando lo utilicemos fuera del template bien nuestro botón aparte
+53:16
+de ser un botón también tendrá que ser clicable por lo tanto le pongo la directiva V on que se puede abreviar con
+53:23
+este símbolo y luego le digo vale Qué evento quiero Bueno pues el evento clic y cuando haga clic en el botón tiene que
+53:30
+ir a una función que se puede llamar como quiera voy a llamarla por ejemplo siguiente si a la función de siguiente
+53:37
+le tengo que dar algún tipo de parámetro le tengo que enviar algo lo pondría aquí entre paréntesis pero si no lo pongo tal
+53:43
+cual esta función siguiente tiene que estar en algún sitio bien la voy a poner aquí
+53:49
+con siguiente se puede llamar Exactamente igual que un texto Sí y si
+53:55
+hubiera un Class una etiqueta que tuviera un Class o uniré siguiente no habría ningún tipo de problema porque
+54:01
+unas cosas html y la otra cosa es javascript por lo tanto se puede
+54:06
+utilizar en este caso el siguiente es contenido es texto no tiene ningún tipo de problemas bien cuando yo haga clic en
+54:13
+siguiente lo que tiene que hacer es modificar la variable contador añadiendo
+54:19
+uno más por lo tanto aquí le digo contador aquí como quiero acceder a su valor hay que poner value sí o sí y aquí
+54:26
+le digo que se incremente en uno no es lo mismo que poner esto le digo que se
+54:32
+incremente en Uno Vale cambiaría de valor como es reactiva debería Mostrar aquí el nuevo valor vamos a probarlo
+54:39
+para ver si vamos funcionando correctamente Nos vamos aquí terminal nuevo terminal y ahora algo muy
+54:46
+importante vamos a pedirle a bite que lo para poder ver cómo funciona pero resulta que la primera vez tenemos que
+54:53
+instalar todas las dependencias por lo tanto le ponemos npmi esto Únicamente lo
+55:00
+hacemos la primera vez también lo podemos haber hecho desde la consola una vez ya lo hacemos No hay que hacerlo
+55:06
+Nunca más en este proyecto ponemos npm room para que bueno pues haga la
+55:13
+compilación aquí me dice la URL donde va a estar pulsa la tecla control hago clic y aquí aparece esto bien Por qué aparece
+55:20
+así bueno aparece así centrado y con ese tipo de letra porque dentro del Main js
+55:27
+había un css vinculado que no he modificado y sss hace todo Que aparezca
+55:33
+aquí Entonces no está mal ahora lo quitaremos pero funciona 5 6 7
+55:40
+evidentemente no hay ningún tipo de final y llega hasta el infinito Pero bueno Esto me interesa que esté un
+55:46
+poquito más centrado por lo tanto me voy a ir a Main css me fijo que está en assets
+55:54
+main.cs este sería el fichero que ya trae ese css por defecto main.cs y me lo
+56:01
+cargo entero me cargo el contenido no el fichero porque aquí pondré todo el css que vaya a ser común Pero al menos ahora
+56:07
+ya se ve un poquito diferente sin css por defecto pero funciona perfectamente igual evidentemente no puede llegar al
+56:15
+24 sino que cuando llegue al último pues tiene que volver a empezar entonces dentro de App View aquí le Suma 1 vale
+56:23
+justo después ya tiene acceso al valor en la línea siguiente value ya tiene un
+56:30
+valor más por lo tanto le digo Mira si contador punto value es mayor o igual
+56:37
+que el número de elementos que hay que era total recordar que cuando por ejemplo hay
+56:44
+cuatro el último no es el 3 el último sería el 2 porque empieza a contar a partir del cero bien entonces cuando
+56:50
+esto se cumpla lo único que tiene que hacer es volver a empezar contador punto
+56:57
+value igual a cero para que empiece desde el cero aunque después como luego
+57:02
+mostrará uno más pues nosotros veremos que pone uno Aunque en realidad es cero primero le suma uno porque siempre tiene
+57:09
+que sumar uno y si me paso del número de elementos que hay entonces vuelve otra vez a empezar lo he puesto enorme para
+57:15
+que se vea pero funciona correctamente bien a 4 5 6 7 ahora Este es el último
+57:20
+colocó el hago clic y empieza desde el 1 que en realidad es cero bien aquí en vez de total debería poner Pues 7 Entonces
+57:28
+porque me he olvidado de poner aquí las dobles llaves con lo cual lo pone como un texto normal aquí le pongo total esto
+57:35
+de aquí lo amplio y ahora ya es correcto ya pone 7 y no total bien
+57:41
+el siguiente punto que tendríamos que hacer ahora que todo funciona bien Es que aparezca también la imagen del Rey y
+57:48
+el nombre del rey aparte de cena 6 podría poner cena 6 con y luego aquí el
+57:55
+nombre del rey que el nombre del rey lo tenemos aquí dentro de nombre y habría que poner la primera en mayúsculas por
+58:01
+ejemplo bien Entonces esto lo vamos a Añadir al template aquí aparte de poner
+58:08
+el contador vamos a Añadir aquí más cosas como quiero que esté dentro del h2 lo voy a poner aquí para que se vea
+58:16
+mejor por lo tanto seguido aunque esté en esta línea lo va a poder seguido con el rey godo aquí le vamos a poner el
+58:24
+nombre del rey el nombre del rey lo tenemos dentro de datos es productos el objeto que sea en cada momento Y luego
+58:30
+el nombre que corresponda por lo tanto nos venimos aquí le decimos que vaya a
+58:36
+productos esto como va a tener que hacer muchas cosas luego lo moveremos a una
+58:42
+propiedad computada productos es el array de productos accedemos a contador y de contador obtenemos el nombre hay
+58:51
+que tener en cuenta que aquí no ponemos el punto válido porque lo estamos creando dentro del template Pues bien si
+58:57
+esto lo pruebo funciona correctamente lo único que esto de aquí debería estar en minúsculas con la primera mayúsculas
+59:04
+pero funciona correctamente Entonces el hecho de ir haciendo más acciones como
+59:09
+ejemplo poniendo esto en minúsculas me va a obligar a que el código va a ser
+59:15
+muy largo si esto de aquí fuera únicamente esto de aquí lo podíamos poner pero como tiene que realizar más
+59:21
+opciones vamos a extraerlo de Aquí vamos a poner aquí rey que será una propiedad
+59:27
+computada y lo vamos a colocar aquí como una propiedad computada computer aquí le
+59:34
+ponemos la sintaxis de función de flecha aquí pegamos lo que teníamos y recordamos que el computed tiene Sí o sí
+59:42
+al final un reto bien que podría ser este de aquí pero lo que voy a hacer es convertirlo a mayúsculas o minúsculas
+59:49
+Aquí le voy a poner primero que de entrada me lo ponga todo en minúsculas todo tanto la primera letra como las
+59:57
+otras bien y esto como voy a trabajar con él lo voy a poner en una variable que no es ni reactiva ni nada porque la
+1:00:04
+voy a utilizar es una variable local que voy a utilizar a partir de aquí bien entonces yo lo que tengo que hacer es
+1:00:09
+la primera en minúsculas que sería utilizar el nombre y decirle que Quiero
+1:00:16
+obtener con substream Quiero obtener desde el cero carácter 0 que es el
+1:00:21
+primero Hasta la segunda Letra Sin seleccionar esta y esto utilizaré tu
+1:00:26
+precase para poderlo en mayúsculas y después Necesito el nombre y necesito
+1:00:32
+todo el resto Es decir desde la 1 desde el carácter número 1 que es la
+1:00:38
+segunda letra porque empieza a contar a partir del 0 hasta el final si aquí no pongo nada es hasta el final aquí no
+1:00:44
+hace falta convertirlo en minúsculas porque ya lo está lo he convertido en la línea 20 entonces para construir lo que
+1:00:51
+tiene que devolver es por una parte la primera letra que la voy a colocar aquí
+1:00:56
+y después la segunda parte aquí podría poner un más sin ningún tipo de
+1:01:01
+problemas o podría utilizar las comillas invertidas en este caso el más me
+1:01:07
+funciona perfectamente y devolverá el nombre ya arreglado y aquí hay dos
+1:01:12
+errores que posiblemente te habrás dado cuenta y es lo habitual en programación falla y no se sabe por qué entonces un
+1:01:20
+problema muy habitual es que a la hora de utilizar aquí contador que es una variable reactiva como no estoy dentro
+1:01:27
+del template claro lo copiado lo he pegado hay que Añadir aquí el value y el otro problema que me va a dar error
+1:01:32
+también es que al utilizar una propiedad computada la tengo que importar Y
+1:01:37
+añadirla en la parte de arriba si no me daría error aquí lo veo correctamente
+1:01:43
+funciona bien en todos los casos lo único que me faltaría la imagen que la
+1:01:48
+voy a poner ahora la imagen irá aquí encima del botón por lo tanto Busco el
+1:01:54
+botón que lo tenemos en el template aquí y aquí pondría un fantástico img src
+1:02:00
+aquí tendría que poner la imagen que quiero aquí el alt sería recomendable
+1:02:05
+pero no obligatorio bien y aquí podría escribir una variable una variable que
+1:02:11
+no existe todavía y que tiene que ser reactiva pero en vez de poner aquí una variable voy a poner un computed para
+1:02:19
+que lo genere a tiempo real Y por qué Porque la imagen cuando os voy a datos aquí en un principio no hay ninguna
+1:02:27
+imagen únicamente pone hervigio todas las imágenes que hay están en https dos
+1:02:34
+puntos barra barra www.html6.6 barra img barra guión bajo y
+1:02:42
+después hervigio o atanagildo oleogibildo o ataúlfo en minúsculas y
+1:02:47
+aquí además hemos visto que hay una en minúsculas y otras en minúsculas punto png por lo tanto tiene que haber una
+1:02:54
+construcción sumando diferentes strings por lo tanto esto tiene que ser mejor una propiedad computada Aquí le voy a
+1:03:02
+poner como se llamará la propiedad computada por ejemplo imagen y esto evidentemente como no existe como
+1:03:08
+fichero voy a poner aquí el v-bin o la abreviatura de los dos puntos Imagen
+1:03:14
+tiene que ser otra propiedad computada con imagen aquí
+1:03:21
+computed con el formato habrá que volver primero la ruta la ruta va a ser siempre
+1:03:27
+la misma entonces en vez de estar repitiéndolo aquí lo que voy a hacer es crear una variable que no será para nada
+1:03:32
+reactiva será la ruta Donde están todas las imágenes que sería esta de aquí
+1:03:38
+después del guión bajo ya cambia lo que sea bien Por lo tanto tiene que
+1:03:44
+devolver primero a la ruta luego le tiene que Añadir lo que sería el nombre del rey como hay algunos que están en
+1:03:52
+mayúsculas y otras que están en minúsculas le voy a poner aquí productos contador Aquí no hay que olvidarse del
+1:03:58
+value porque no estoy del template luego punto nombre y luego tu lower Case para
+1:04:05
+que lo convierta en minúsculas vale Y después de esto el png esto así
+1:04:11
+funcionará perfectamente pero cuando combino variables y también String me
+1:04:17
+gusta más utilizar mis amigas las comillas invertidas en vez de utilizar aquí el más voy a poner aquí las
+1:04:24
+comillas invertidas esto es una variable aquí elimino el más aquí sería productos
+1:04:31
+hasta aquí y luego aquí png sin ningún tipo de comillas Vale y lo tendría ya
+1:04:37
+correctamente esto lo devolvería toda la ruta correc que la utilizaría dentro de
+1:04:43
+imagen y esto lo vemos así aparece la imagen correctamente lo único que hombre si fuera un poquito más pequeña pues
+1:04:50
+posiblemente iría mejor el siguiente punto que tengo que Añadir es el precio lo obtendría de el precio que ponemos en
+1:04:58
+el array de objetos lo vamos a colocar aquí debajo del h2 aquí ponemos un h3
+1:05:04
+por ejemplo un poquito más pequeño que el anterior aquí le ponemos precio aquí luego haremos un poquito de css al menos
+1:05:11
+y luego le diremos qué precio dos puntos vale Y aquí tendríamos que poner Pues el
+1:05:16
+precio el precio Es simplemente acceder a productos al objeto contador que sea y
+1:05:23
+obtener el precio no hay que hacer tampoco una propiedad computada Porque
+1:05:28
+de alguna manera y es muy sencillo aquí le digo productos luego contador el
+1:05:34
+value no hace falta porque estamos en el template y luego precio como quiero el
+1:05:39
+símbolo de la moneda que sea aquí le pondré la moneda fuera de las dos llaves
+1:05:44
+y lo tengo aquí correcto cada uno de los precios correspondientes bien Ahora
+1:05:50
+debajo quiero Que aparezca si trabaja únicamente fines de semana o bien de
+1:05:55
+lunes a domingo y además que tenga un color determinado si trabaja de lunes a
+1:06:01
+domingo pues que tenga un color verde y si trabaja solo fin de semana un color pues yo que sé rojo por ejemplo este
+1:06:06
+color en vez de utilizar el Style utilizaré el Class que es mucho mejor como únicamente tiene que afectar al
+1:06:12
+componente app.view lo voy a poner dentro del Style también lo podía poner
+1:06:17
+en el main.cs porque en este caso no tengo más componentes pero si tuviera
+1:06:23
+más componentes y estos estilos fueran exclusivos de este componente utilizaría este Style aquí pondré primero
+1:06:31
+todos los días un poquito largo Pero bueno está clarísimo aquí le pondré que
+1:06:37
+el color de fondo sea gris bien y cuando
+1:06:42
+es solo fines de semana Vale pues el color será rojo perfecto maravilloso
+1:06:51
+genial lo único que ni todos los días existe ni solo fines de semana tampoco
+1:06:56
+me voy a ir al template y las cajas que haga les daré ese Class bien aquí debajo
+1:07:02
+del precio voy a crear dos cajas una caja que será el texto de solo fines de
+1:07:09
+semana y otro dip que será el otro en vez de solo fines de semana Será de
+1:07:15
+lunes a domingo evidentemente si lo pongo así se van a ver los dos siempre
+1:07:20
+voy a poner aquí un vive para que esto Solo lo haga cuando se cumpla una
+1:07:26
+determinada condición bien Qué condición Bueno pues cuando aquí vea fines de
+1:07:32
+semana es igual a true por lo tanto la condición la tenemos que poner dentro de
+1:07:37
+los paréntesis Aquí sí productos contador
+1:07:42
+sin el value del objeto necesitamos fin de semana y la condición sería cuando
+1:07:49
+fuese Igual igual a Trump a ver se puede poner de esta manera pero cuando es
+1:07:55
+igual igual que true no hace falta poner nada si quitamos la comparación ya se
+1:08:01
+sabe que estamos comparando que estamos buscando cuando es igual que true por lo
+1:08:06
+tanto cuando se cumpla esta condición mostrará solo fines de semana y cuando no mostrará de lunes a domingo por lo
+1:08:14
+tanto aquí nos hace falta utilizar la otra directiva que es vels vels no tiene
+1:08:20
+ningún tipo de condición porque solo hay dos opciones o bien se cumple esta o bien se cumple esta de aquí no se coloca
+1:08:27
+ninguna condición lo único que para que esta caja de y esta caja aquí tengan
+1:08:32
+algún tipo de estilo es decir los estilos que abajo he creado vamos a
+1:08:38
+añadirle el todos los días lo copio y esto lo colocaría dentro de esta caja en
+1:08:43
+cualquier lugar de la caja le digo Class y aquí le pongo el Class y el otro que
+1:08:49
+es tan largo mejor copiarlo y después pegarlo lo copio y lo pego en la otra da
+1:08:56
+igual que lo coloque aquí o bien que lo coloque aquí Class igual a esto de aquí ahora por
+1:09:03
+ejemplo vemos que funciona solo fines de semana de lunes a domingo Lo único que hombre sí que tiene un color diferente
+1:09:10
+Pero me interesa darle un borde redondeado un padding color blanco etcétera entonces en vez de colocar
+1:09:16
+abajo lo mismo en dos sitios diferentes lo que vamos a hacer es Añadir otro
+1:09:22
+Class que lo podríamos poner en el mismo clase parado con un espacio por ejemplo aquí sería días y también aquí en este
+1:09:30
+Class al principio o al final le pondríamos días Por lo tanto en solo fines de semana y todos los días podemos
+1:09:37
+aquí las propiedades que son específicas y en días pondremos aquellas que son comunes el días lo podemos poner dentro
+1:09:43
+del main.css si estos selectores fueran accesibles desde cualquier tipo de componente Pero como ahora solo tenemos
+1:09:50
+un componente que es app View lo vamos a colocar aquí y le vamos a decir que punto días serían las características
+1:09:56
+que mantienen las dos cajas que serían por una parte un color White para que ambos resalten con el fondo Por otra
+1:10:03
+parte un poquito de espacio por la parte de arriba de cuatro píxeles y por la derecha y por la izquierda de 17 luego
+1:10:10
+un poquito cambio de tamaño para que sean un poco más pequeños luego también
+1:10:17
+un borde radios para que el borde sea redondeado y quede mucho mejor luego
+1:10:22
+también un margin para que estén separados del resto de elementos por ejemplo 5 px por arriba 0 derecha
+1:10:30
+izquierda y 10 píxeles por abajo y sobre todo para que la caja se adapte al
+1:10:36
+contenido y no llegue hasta la parte derecha de la pantalla vamos a cambiarle el display y le pondremos un display in
+1:10:44
+Line blog de esta manera el ancho se adaptará al contenido esto queda así con
+1:10:49
+el padding con el color correspondiente perfecto maravilloso genial muy bien
+1:10:55
+siguiente punto me interesa que si el precio es menor de 100 aquí aparezca una
+1:11:02
+imagen con el nuevo precio el nuevo precio va a ser una formulita muy sencilla Pero va a tener que calcular el
+1:11:09
+10% por tanto en vez de colocarlo directamente en el template lo voy a colocar en otra propiedad computada me
+1:11:16
+voy aquí y creo otra caja vale esta caja que va a tener más cosas evidentemente y
+1:11:22
+directivas pondrá Por una parte ahora un 10% de descuento aquí podrá el nuevo
+1:11:28
+precio que esto como es una fórmula tendrá que ir en una propiedad computada mucho mejor aquí le pongo la moneda esto lo
+1:11:37
+coloco en un dip aparte para que debajo me coloque la imagen que tiene que
+1:11:43
+aparecer como voy a poner la ruta entera la puedo tener donde yo quiera pero si la tuviese dentro de public aquí pondría
+1:11:50
+barra y luego oferta punto jpg evidentemente aquí me falta el src Aquí
+1:11:58
+no hay ningún tipo de V ni nada porque estoy poniendo directamente la imagen
+1:12:04
+que yo quiero y aquí pues podría poner raygodo en descuento lo que yo quisiera
+1:12:10
+esta ruta es para que acceda directamente al raíz se vaya a public
+1:12:16
+que sería el raíz por defecto y aquí encontrará oferta punto jpg no hace
+1:12:22
+falta importarla porque lo estoy haciendo directamente de esta manera pero pero pero esto lo está haciendo
+1:12:28
+siempre no ningún tipo de condicional por lo tanto Aquí le voy a poner un vive
+1:12:34
+para que esto Solo Únicamente lo haga si productos contador sin el value punto
+1:12:43
+precio sea menor de 100 además como esta imagen va a ser enorme
+1:12:50
+para el css para localizar esta imagen y no esta de aquí voy a decir que este dip
+1:12:57
+tenga un nombre y así poder hacer referencia a la imagen que me interesa aquí como es mayor de 100 no se muestra
+1:13:03
+y aquí que 73 sí que aparece hace falta que sea más pequeñito y luego hace falta que aquí ponga el precio del descuento
+1:13:11
+vale esto es css Y esto es una propiedad computada vamos a ir a lo fácil primero
+1:13:17
+nos vamos al css y le digo que vaya a oferta y mg que es la imagen que hay de
+1:13:23
+todo oferta y aquí le voy a dar dos propiedades Por una parte la importante que es un Quiz de 65 píxeles y luego
+1:13:31
+también ya que estamos un margin para que esté separado del resto de elementos esto ya aparece más pequeñito genial y
+1:13:38
+ahora aquí tiene que aparecer el descuento el descuento es una propiedad computada que tiene que venir dentro del
+1:13:44
+apartado de Script hemos dicho que esa caja tiene un nuevo precio Esto no es
+1:13:50
+una variable porque es una propiedad computada por lo tanto me vengo al final le digo nuevo precio igual a computed
+1:13:59
+muy utilizado el computed al menos también esta actividad que está hecha para eso precisamente Y aquí tiene que
+1:14:05
+haber un reto entonces lo que voy a hacer es por una parte obtener el precio productos contador aquí el punto value
+1:14:13
+punto precio y para obtener lo que sería el 10% lo divido entre 1,10 esto estaría
+1:14:21
+bien Pero puede ser que me den muchos y muchos decimales por ejemplo estos de
+1:14:26
+aquí no me interesa que me dé esto de aquí sino que me interesa que aparezcan por ejemplo dos y ya está una de las
+1:14:33
+opciones que tenemos para poder hacer esto es todo esto lo convierto en numberg que me dirá alguien Bueno pues
+1:14:39
+esto Estamos igual Sí pero el truco está en que dentro de la operación lo que
+1:14:46
+hago después es un tufise 2 y todo esto estaría dentro de El number y vemos que
+1:14:53
+ahora ya funciona aquí por ejemplo es mayor de 100 mayor de 100 aquí ya aparece menor de 100 y tenemos aquí el
+1:14:59
+descuento con únicamente dos decimales dos decimales no como antes que había 200 millones de decimales después del
+1:15:06
+punto y funciona correctamente ahora únicamente faltaría un lavado de cara
+1:15:12
+con css para que si pudiera parecer al modelo inicial te aconsejo que mires este vídeo accedas
+1:15:20
+a este completo curso y te suscribas al Canal para estar al tanto de todas las novedades
+1:15:25
+[Música]
+
+
+
