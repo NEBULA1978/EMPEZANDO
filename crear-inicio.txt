@@ -32,6 +32,30 @@ Eliminamos importar css:
 Inicialmente ejecutara app.vue
 
 En el archivo app.vue dentro de la carpeta de componentes
+borramos todo y los demas archivos dentro de componetes tambien podemos borrar, creamos:
+
+app.Vue
+
+<template>
+  <h1>Hola Mundo</h1>
+</template>
+
+Cremaos estilos css:
+<!-- scoped solo afecta a este elemento -->
+<style scoped>
+  h1{
+    color: red;
+  }
+</style>
+
+<!-- Codigo Javascript ,con setup evitamos exportar-->
+
+<script setup>
+  
+</script>
+
+
+
 
 
 //////////////////////////////////////////////////////////////////
