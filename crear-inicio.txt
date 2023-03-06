@@ -1,0 +1,9 @@
+Creamos proyecto:
+npm init vue@latest
+Ponemos el nombre y a todo no
+
+Nos sale:
+cd empezando
+npm install
+npm run dev
+
