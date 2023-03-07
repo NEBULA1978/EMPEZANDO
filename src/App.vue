@@ -15,9 +15,16 @@ const miColor=ref("azul")
   const contador=ref(0);
   const decremento = ()=>{
     contador.value--;
+    // Hacemos referencia a una variable de tipo reactivo
+    if (contador.value<0){
+      miColor.value="rojo"
+    }
   }
   const incremento = ()=>{
     contador.value++;
+    if (contador.value > 5) {
+    miColor.value = "verde"
+  }
   }
 
 </script>
