@@ -1,6 +1,6 @@
 <template>
 <button @click="decremento">-</button>
-<span class="verde">{{ contador }}</span>
+<span :class="miColor">{{ contador }}</span>
 <button @click="incremento">+</button>
 </template>
 
@@ -9,6 +9,8 @@
 
 <script setup>
 import {ref} from "vue";
+// Es un string no un variable ponemos entre comillas
+const miColor=ref("azul")
   // Creamos variable reactiva
   const contador=ref(0);
   const decremento = ()=>{
@@ -32,5 +34,8 @@ span{
 }
 .verde{
   color: green;
+}
+.azul{
+  color: blue;
 }
 </style>
