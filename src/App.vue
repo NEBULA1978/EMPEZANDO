@@ -12,7 +12,7 @@
 
 <script setup>
 import {ref} from "vue";
-const visible=false;
+const visible=true;
 // Es un string no un variable ponemos entre comillas
 const miColor=ref("azul")
   // Creamos variable reactiva
