@@ -2,9 +2,11 @@
 <button @click="decremento">-</button>
 <span :class="miColor">{{ contador }}</span>
 <button @click="incremento">+</button>
+<div v-if="contador<0">Escribe una cantidad mayor de 0</div>
+<div v-else>Cantidad correcta</div>
 </template>
 
-
+<!-- El .value solo utilizamos en script no en template -->
 <!-- Codigo Javascript ,con setup evitamos exportar-->
 
 <script setup>
