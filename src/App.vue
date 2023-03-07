@@ -1,6 +1,6 @@
 <template>
 <button @click="decremento">-</button>
-<span>{{ contador }}</span>
+<span class="verde">{{ contador }}</span>
 <button @click="incremento">+</button>
 </template>
 
@@ -26,5 +26,11 @@ import {ref} from "vue";
 <style scoped>
 span{
   padding: 0 5px;
+}
+.rojo{
+  color: red;
+}
+.verde{
+  color: green;
 }
 </style>
