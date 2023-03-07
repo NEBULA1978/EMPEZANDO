@@ -5,7 +5,7 @@
 <div v-if="contador<0">Escribe una cantidad mayor de 0</div>
 <div v-else-if="contador>=5">Escribe una cantidad menior de 5</div>
 <div v-show="comprobacion">No esta permitodo el número 0</div>
-<img :src="imagen2" alt="">
+<img :src="imagen1" alt="imagen">
 </template>
 
 <!-- El .value solo utilizamos en script no en template -->
@@ -13,8 +13,10 @@
 
 <script setup>
 import {ref,computed} from "vue";
-import imagen2 from "./assets/logo.svg"
-const imagen1="https://www.html6.es/img_html/micanalyoutube.png"
+import { valores } from "./datos.js"
+const imagen1 = valores[0].web
+
+// import imagen2 from "./assets/logo.svg"
 // Es un string no un variable ponemos entre comillas
 const miColor=ref("azul")
   // Creamos variable reactiva
