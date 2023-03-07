@@ -4,6 +4,7 @@
 <button @click="incremento">+</button>
 <div v-if="contador<0">Escribe una cantidad mayor de 0</div>
 <div v-else-if="contador>=5">Escribe una cantidad menior de 5</div>
+<div v-show="visible">No esta permitodo el número 0</div>
 </template>
 
 <!-- El .value solo utilizamos en script no en template -->
@@ -11,6 +12,7 @@
 
 <script setup>
 import {ref} from "vue";
+const visible=false;
 // Es un string no un variable ponemos entre comillas
 const miColor=ref("azul")
   // Creamos variable reactiva
