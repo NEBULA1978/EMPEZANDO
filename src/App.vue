@@ -1,23 +1,21 @@
 <template>
-  <h1 :class="selector">
-    HOLA {{ miNombre }} y tendré {{ miEdad }}
-  </h1>
-  <!-- <button v-on:click="">Aceptar</button> -->
-  <button @click="saludar(miNombre)">Aceptar</button>
+<button @click="decremento">-</button>
+<span>{{ contador }}</span>
+<button @click="incremento">+</button>
 </template>
 
 
 <!-- Codigo Javascript ,con setup evitamos exportar-->
 
 <script setup>
-  const miNombre="Ramon"
-  const miEdad=28
-  const miColor="color:green;font-size:3em"
-  const selector="azul"
-  // FUNCION
-  const saludar=(nombre)=>{
-    console.log(`Hola ${nombre}`)
+  const contador=0;
+  const decremento = ()=>{
+    contador--;
   }
+  const incremento = ()=>{
+    contador++;
+  }
+
 </script>
 
 
