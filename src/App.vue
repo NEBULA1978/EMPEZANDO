@@ -3,7 +3,7 @@
 <span :class="miColor">{{ contador }}</span>
 <button @click="incremento">+</button>
 <div v-if="contador<0">Escribe una cantidad mayor de 0</div>
-<div v-else>Cantidad correcta</div>
+<div v-else-if="contador>=5">Escribe una cantidad menior de 5</div>
 </template>
 
 <!-- El .value solo utilizamos en script no en template -->
