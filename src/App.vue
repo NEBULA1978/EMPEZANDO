@@ -12,7 +12,7 @@
 
 <script setup>
 import {ref} from "vue";
-const visible=true;
+const visible=ref(true);
 // Es un string no un variable ponemos entre comillas
 const miColor=ref("azul")
   // Creamos variable reactiva
@@ -23,12 +23,15 @@ const miColor=ref("azul")
     if (contador.value<0){
       miColor.value="rojo"
     }
+    visible.value=contador.value===0;
   }
   const incremento = ()=>{
     contador.value++;
     if (contador.value > 5) {
     miColor.value = "verde"
   }
+    visible.value = contador.value === 0;
+
   }
 
 </script>
