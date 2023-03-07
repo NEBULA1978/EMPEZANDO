@@ -1,7 +1,9 @@
 <template>
-  <h1 v-bind:class="selector">
+  <h1 :class="selector">
     HOLA {{ miNombre }} y tendré {{ miEdad }}
   </h1>
+  <!-- <button v-on:click="">Aceptar</button> -->
+  <button @click="saludar">Aceptar</button>
 </template>
 
 
@@ -12,6 +14,10 @@
   const miEdad=28
   const miColor="color:green;font-size:3em"
   const selector="azul"
+  // FUNCION
+  const saludar=()=>{
+    console.log("Hola")
+  }
 </script>
 
 
