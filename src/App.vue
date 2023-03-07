@@ -3,7 +3,7 @@
     HOLA {{ miNombre }} y tendré {{ miEdad }}
   </h1>
   <!-- <button v-on:click="">Aceptar</button> -->
-  <button @click="saludar">Aceptar</button>
+  <button @click="saludar(miNombre)">Aceptar</button>
 </template>
 
 
@@ -15,8 +15,8 @@
   const miColor="color:green;font-size:3em"
   const selector="azul"
   // FUNCION
-  const saludar=()=>{
-    console.log("Hola")
+  const saludar=(nombre)=>{
+    console.log(`Hola ${nombre}`)
   }
 </script>
 
