@@ -5,6 +5,7 @@
 <div v-if="contador<0">Escribe una cantidad mayor de 0</div>
 <div v-else-if="contador>=5">Escribe una cantidad menior de 5</div>
 <div v-show="comprobacion">No esta permitodo el número 0</div>
+<img src="https://www.html6.es/img_html/micanalyoutube.png" alt="">
 </template>
 
 <!-- El .value solo utilizamos en script no en template -->
